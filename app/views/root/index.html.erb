@@ -3,7 +3,7 @@
         <title>
             Thomas' Webpage
         </title>
-        <link rel="shortcut icon" href="./img/tdnii.ico">    
+        <link rel="shortcut icon" href="./img/tdnii.ico">
         <style type="text/css">
             body {
                 background: #ededed;
@@ -57,14 +57,15 @@
             }
         </style>
     </head>
+    
     <body>
                <div id="pic-holder">
                  <nav class="ink-navigation pull-right medium-100 small-100" style="width: 100%">
                     <ul class="menu horizontal black">
-                        <li class="active"><a href="">Welcome</a></li>
-                        <li><a id="projects-button" href="">Projects</a></li>
-                        <li><a id="resume-button" href="">Resume</a></li>
-                        <li><a id="about-me-button" href="#">About Me</a></li>
+                        <li class="active"><a href="#">Welcome</a></li>
+                        <li><a id="projects-button" href="#">Projects</a></li>
+                        <li><a id="resume-button" href="#">Resume</a></li>
+                        <li><a id="about-me-button" href="#about">About Me</a></li>
                     </ul>
                 </nav>    
                 <h1 class="pull-left medium-100 small-100" style="width: 100%">
@@ -123,8 +124,6 @@
 
     <script>
 
-
-
         $("#projects-button").click(function(){
             $('html, body').animate({
                 scrollTop: $("#box1").offset().top
@@ -158,4 +157,8 @@
                 }
             }
           });
+       
+
+    </script>
+
 </html>
