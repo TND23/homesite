@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>
+            Thomas' Webpage
+        </title>
+        <link rel="shortcut icon" href="./img/tdnii.ico">    
+        <style type="text/css">
+            body {
+                background: #ededed;
+            }
+           header {
+                padding: 2em 0;
+                margin-bottom: 2em;
+                text-align: left;
+                position: fixed;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            header h1 small:before  {
+                content: "|";
+                margin: 0 0.5em;
+                font-size: 1.6em;
+            }
+
+            #pic-holder {
+                border-bottom: 1px solid #cecece;
+                overflow: hidden;
+            }
+            #pic-holder h1 {
+                font-size: 1.75em;
+            }
+            #pic-holder h1 small:before  {
+                content: "|";
+                margin: 0 0.5em;
+                font-size: 1.6em;
+            }
+
+            header .ink-navigation {
+                margin-top: 2em;
+            }
+            footer {
+                background: #ccc;
+                color: #0003;
+            }
+            footer p {
+                padding: 0.5em 1em 0.5em 0;
+                margin: 0;        
+            }
+            .bottom-border {
+                border-bottom: 1px solid #cecece;
+            }
+
+            a:hover img {
+                box-shadow: 0 0 10px 0 #aaa;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+               <div id="pic-holder">
+                 <nav class="ink-navigation pull-right medium-100 small-100" style="width: 100%">
+                    <ul class="menu horizontal black">
+                        <li class="active"><a href="">Welcome</a></li>
+                        <li><a id="projects-button" href="">Projects</a></li>
+                        <li><a id="resume-button" href="">Resume</a></li>
+                        <li><a id="about-me-button" href="#">About Me</a></li>
+                    </ul>
+                </nav>    
+                <h1 class="pull-left medium-100 small-100" style="width: 100%">
+                    <div class="logo">
+                        <a>
+                          <h1 style="z-index: 2;
+                          position: absolute;">
+                            Thomas Nast
+                            <small>web developer</small>
+                        </h1>
+                         <div id="about-me" class="push-center" style="height: 100%; width: 100%; background-color: rgba(146, 118, 168, .5); z-index: 1; position: absolute;  display: none; margin-top: 0px;">
+                            <p style="margin-top: 100px; color: #FFFFFF; margin-left: 10px;"> Hi! I'm Tommy. Or Thomas. Call me either, but don't call me Tom! I'm a web-developer who is migrating between San Fransisco and Seattle looking for opportunities. This is my little personal website, and as you can see it has quite some touching up to do. For info about my resume, click the 'resume' button. To check out a small list of my personal and group projects, scroll down or click on the projects button. If you're a real weirdo and want to actually know about <i> me </i> then e-mail me at tommyn (at) isomedia (dot) com. </p>
+                  <img src="web_pic1.jpg" id="tommy-pic" alt="" style="height: 30%; margin-top: 0px; float: right;
+                            cursor: default;">
+                        </div>
+                        <img src="IMG_0219.PNG" id="default-pic" alt="" style="width: 100%; margin-top: 0px;
+                            cursor: default;">   
+                        </a>
+                    </div>
+                </h1>  
+            </div>
+             <div style="width: 100%; z-index: 2; background-color:black; height: 43px; position: absolute;"> 
+            </div> 
+            <div class="ink-grid">
+                <h1 style="margin-top: 90px;">Projects</h1>
+                <blockquote>
+                    <p>La semplicità è la massima sofisticazione</p> 
+                    <p>Simplicity is the ultimate sophistication. </p>
+                    <p><cite>Leonardo Da Vinci</cite></p>
+                </blockquote>
+                <div class="column-group gutters">
+                    <div id="box1" class="large-33 medium-50 small-50">
+                        <a href="http://www.aheadplan.com"><img src="trolleapp_img.png" alt=""></a>                        
+                    </div>
+                    <div class="large-33 medium-50 small-50">
+                        <a href="./asteroids/index.html"><img src="asteroids.png" alt=""></a>                        
+                    </div>
+                    <div class="large-33 medium-50 small-50">
+                        <a href="#"><img src="" alt=""> More coming soon..</a>                        
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <nav class="ink-navigation push-left small-100 small-push-left" style="width:100%;">
+                    <ul class="menu horizontal black" style="width: 100%;">
+                        <li class="active"><a href="#">Welcome</a></li>
+                         <li><a id="projects-button-2" href="#">Projects</a></li>
+                         <li><a href="#">Resume</a></li>
+                         <li><a href="#">About Me</a></li>
+                    </ul>
+                </nav>
+            <p class="push-right small-100"></p>
+            </footer>
+        </body>
+
+
+    <script>
+
+
+
+        $("#projects-button").click(function(){
+            $('html, body').animate({
+                scrollTop: $("#box1").offset().top
+            }, 500);
+        });
+
+            $("#projects-button-2").click(function(){
+            $('html, body').animate({
+                scrollTop: $("#box1").offset().top
+            }, 500);
+        });
+
+        $("#about-me-button").click(function(){
+            var about_me = $("#about-me");
+            var default_pic = $("#default-pic");
+            about_me.toggle("visible");
+
+
+        });
+          $('#resume-button').click(function(){
+            var r=confirm("Download this document? (.doc format)");
+            if (r==true){
+                $('#resume-button').attr({target: '_blank', 
+                href  : './resume.doc'});
+            }       
+            else{
+                var x = confirm("check out the plain text version online?");
+                if (x ==true){
+                     $('#resume-button').attr({target: '_blank', 
+                href  : './resume-plain.txt'});
+                }
+            }
+          });
+</html>
