@@ -13,3 +13,4 @@ group :doc do
   gem 'sdoc', require: false
 end
 # gem 'debugger', group: [:development, :test]
+ruby "2.0.0"
