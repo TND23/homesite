@@ -3,9 +3,101 @@
         <title>
             Thomas' Webpage
         </title>
-       
+        <link rel="shortcut icon" href="./img/tdnii.ico">
     </head>
     <body>
+    
+        <nav class="ink-navigation pull-right medium-100 small-100" style="width: 100%;">
+            <ul class="menu horizontal black">
+                <li class="pull-left medium-50 small-100"><a href="#">Welcome</a></li>
+                <li class="pull-left medium-50 small-100"><a id="projects-button" href="#">Projects</a></li>
+                <li class="pull-left medium-50 small-100"><a id="resume-button" href="#">Resume</a></li>
+                <li class="pull-left medium-50 small-100"><a id="about-me-button" href="#about">About Me</a></li>
+            </ul>
+        </nav>    
+        <div id="container" class="pull-left medium-100 small-100" style="width: 100%; height: 50%; margin-top: 0px">
+            <div class="logo" style="height: 100%;">
+                <%= image_tag "IMG_0219.JPG", {height: 45} %>
+                <div id ="picture-one"style="height: 100px; width:100%; margin-top: 0px; float: right; cursor: default;">
+                </div>
+                <a>
 
+                    <h1 style="z-index: 2; position: absolute;">
+                        Thomas Nast
+                        <small>web developer</small>
+                    </h1>
 
+                    <div id="about-me" class="push-center" style="height: 100%; width: 100%; background-color: rgba(146, 118, 168, .5); z-index: 1; position: absolute;  display: none; margin-top: 0px;">
+                        <p style="margin-top: 100px; color: #FFFFFF; margin-left: 10px; font-family: Segoe UI"> Hi! I'm Tommy. Or Thomas. Call me either, but don't call me Tom! I'm a web-developer who is migrating between San Fransisco and Seattle looking for opportunities. This is my little personal website, and as you can see it has quite some touching up to do. For info about my resume, click the 'resume' button. To check out a small list of my personal and group projects, scroll down or click on the projects button. If you're a real weirdo and want to actually know about <i> me </i> then e-mail me at tommyn (at) isomedia (dot) com. </p>
+                    </div>
+                   
+                </a>
+            </div>
+        </div>  
+
+        <div class="ink-grid">
+            <h2>Projects</h2>
+            <blockquote>
+                <p>La semplicità è la massima sofisticazione</p> 
+                <p>Simplicity is the ultimate sophistication. </p>
+                <p><cite>Leonardo Da Vinci</cite></p>
+            </blockquote>
+            <div class="column-group gutters">
+                <div id="box1" class="large-33 medium-50 small-100">
+                    <a href="http://www.aheadplan.com"><img src="trolleapp_img.png" alt=""></a>                        
+                </div>
+                <div class="large-33 medium-50 small-100">
+                    <a href="./asteroids/index.html"><img src="asteroids.png" alt=""></a>                        
+                </div>
+                <div class="large-33 medium-50 small-100">
+                    <a href="#"><img src="" alt=""> More coming soon..</a>                        
+                </div>
+            </div>
+        </div>
+        <footer>
+            <nav class="ink-navigation push-left small-100 small-push-left" style="width:100%;">
+                <ul class="menu horizontal black" style="width: 100%;">
+                    <li class=""><a href="#">Welcome</a></li>
+                    <li><a id="projects-button-2" href="#">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">About Me</a></li>
+                </ul>
+            </nav>
+            <p class="push-right small-100"></p>
+        </footer>
+    </body>
+
+    <script>
+
+        $("#projects-button").click(function(){
+            $('html, body').animate({
+                scrollTop: $("#box1").offset().top
+            }, 500);
+        });
+
+            $("#projects-button-2").click(function(){
+            $('html, body').animate({
+                scrollTop: $("#box1").offset().top
+            }, 500);
+        });
+
+        $("#about-me-button").click(function(){
+            var about_me = $("#about-me");
+            var default_pic = $("#default-pic");
+            about_me.toggle("visible");
+        });
+
+        $('#resume-button').click(function(){
+        var r=confirm("Download this document? (.doc format)");
+        if (r==true){
+            $('#resume-button').attr({target: '_blank', href: './resume.doc'});
+        }       
+        else{
+            var x = confirm("check out the plain text version online?");
+            if (x ==true){
+                 $('#resume-button').attr({target: '_blank', href: './resume-plain.txt'});
+            }
+        }
+        });
+    </script>
 </html>
