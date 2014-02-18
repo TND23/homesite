@@ -11,4 +11,9 @@ gem 'bootstrap-sass'
 group :doc do
   gem 'sdoc', require: false
 end
+
+group :development do
+  gem 'rails_layout'
+end
+
 ruby "2.0.0"
