@@ -1,3 +1,3 @@
 Homeapp::Application.routes.draw do
-  root to: "root#new"
+  root to: "root#index"
 end
