@@ -32,7 +32,7 @@
     this.pos = pos;
     this.vel = vel;
     var COLOR = "#AA3388";
-    var RADIUS = 2;
+    var RADIUS = 5;
     MovingObjects.MovingObject.call(this, pos, vel, RADIUS, COLOR);
   }
 

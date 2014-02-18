@@ -151,7 +151,6 @@
     }
 
     Game.prototype.setLevel = function(){
-      alert('proceeding to the next level...')
       var level = this.level;
       if(level < 11){
         level = 12; 

@@ -1,0 +1,33 @@
+<html>
+<head><title>Asteroids!!</title>
+
+</head>
+<body>
+
+  <script>
+  var canvas = document.createElement("canvas");
+  canvas.style.border = "black 1px solid";
+  canvas.setAttribute("width", 800);
+  canvas.setAttribute("height", 600);
+
+
+  var body = document.getElementsByTagName("body")[0];
+  body.appendChild(canvas);
+
+  var ctx = canvas.getContext("2d");
+
+  var game = new AsteroidsGame.Game(ctx);
+  game.start();
+  </script>
+ <h3 id="instructions" style="float: right;">
+    <p> Controls: </p>
+    <p> Accelerate left: "a" </p>
+    <p> Accelerate left: "s" </p>
+    <p> Accelerate left: "d" </p>
+    <p> Accelerate left: "f" </p>
+    <p> Shoot: spacebar </p>
+  </h3>
+
+</body>
+
+</html>
