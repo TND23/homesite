@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>TrolleApp</title>
-  <link rel="shortcut icon" href="./trollface.png"/>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Homeapp" %>">
+      <%= stylesheet_link_tag "application" %>
+      <%= javascript_include_tag "application" %>
+      <%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>
+  </head>
 </html>
