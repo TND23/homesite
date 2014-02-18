@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.14'
+gem 'rails', '4.0.0'
 gem 'pg'
 gem "jquery-rails", "~> 3.1.0"
 gem 'turbolinks'
