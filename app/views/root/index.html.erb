@@ -8,13 +8,10 @@
     <div class="navbar navbar-inverse" role="navigation" style="width:100%">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-           
-                </button>
-                <a class="navbar-brand" href="#">dashboard</a>
+                <a class="navbar-brand">dashboard</a>
             </div>
             <ul class="nav navbar-nav" >
-                <li><a href="#">Welcome</a></li>
+               
                 <li><a id="projects-button" href="#">Projects</a></li>
                 <li><a id="resume-button" href="#">Resume</a></li>
                 <li><a id="about-me-button" href="#about">About Me</a></li>
@@ -22,21 +19,28 @@
         </div>
     </div>
             <div class="logo" style="height: 100%;">
-            <h1 style="z-index: 2; position: absolute;">
+            <h1 style="z-index: 2; position: relative;">
                         Thomas Nast
                         <small>web developer</small>
                     </h1>
                     <div style="height:100%; width:100%;">
 
                     <div id="about-me" class="push-center" style="height: 100%; width: 100%; background-color: rgba(146, 118, 168, .5); z-index: 1; position: absolute;  display: none; margin-top: 0px;">
-                        <p style="margin-top: 100px; color: #FFFFFF; margin-left: 10px; font-family: Segoe UI"> Hi! I'm Tommy. Or Thomas. Call me either, but don't call me Tom! I'm a web-developer who is migrating between San Fransisco and Seattle looking for opportunities. This is my little personal website, and as you can see it has quite some touching up to do. For info about my resume, click the 'resume' button. To check out a small list of my personal and group projects, scroll down or click on the projects button. If you're a real weirdo and want to actually know about <i> me </i> then e-mail me at tommyn (at) isomedia (dot) com. </p>
+                        <p style="margin-top: 100px; color: #FFFFFF; margin-left: 10px; font-family: Segoe UI; font-size: 1.5em;"> Hi! I'm Tommy. Or Thomas. Call me either, but don't call me Tom! I'm a web-developer who is migrating between San Fransisco and Seattle looking for opportunities. This is my little personal website, and as you can see it has quite some touching up to do. For info about my resume, click the 'resume' button. To check out a small list of my personal and group projects, scroll down or click on the projects button. If you're a real weirdo and want to actually know about <i> me </i> then e-mail me at tommyn (at) isomedia (dot) com. </p>
+                        <%= image_tag "web_pic1.jpg", :id => 'profile-pic' %>
+
                     </div>
-                <%= image_tag "IMG_0219.JPG", {height: "100%", margin: 0} %>
+                <%= image_tag "IMG_0219.JPG", :id => 'sunset-hill' %>
             </div>
             
             </div>
         </div>  
-
+        <div id="colors" style="
+    height: 52px;
+    width: 100%;
+    background: black;
+">
+        </div>
             <h2>Projects</h2>
             <blockquote>
                 <p>La semplicità è la massima sofisticazione / 
@@ -48,10 +52,10 @@
                  <%= image_tag "trolleapp_img.png", {height: "400px", margin: 0} %>                      
                 </a>
 
-                <div class="col-md-4">
-                    <a href="./asteroids/index.html"><img src="asteroids.png" alt=""></a>                        
-                </div>
-                
+                 <a id="box2" class="col-md-4" a href="./asteroids/index.html">
+                 <%= image_tag "asteroids.png", {height: "400px", margin: 0} %>                      
+                </a>
+
                 <div class="col-md-4">
                     <a href="#"><img src="" alt=""> More coming soon..</a>                        
                 </div>
@@ -61,7 +65,6 @@
             <div class="navbar navbar-inverse" role="navigation" style="width:100%">
                 <div class="container">
                     <ul class="nav navbar-nav" >
-                        <li><a href="#">Welcome</a></li>
                         <li><a id="projects-button-2" href="#">Projects</a></li>
                         <li><a id="resume-button" href="#">Resume</a></li>
                         <li><a id="about-me-button" href="#about">About Me</a></li>
