@@ -26,7 +26,7 @@
                     <div style="height:100%; width:100%;">
 
                     <div id="about-me" class="push-center" style="height: 100%; width: 100%; background-color: rgba(146, 118, 168, .5); z-index: 1; position: absolute;  display: none; margin-top: 0px;">
-                        <p style="margin-top: 100px; color: #FFFFFF; margin-left: 10px; font-family: Segoe UI; font-size: 1.5em;"> Hi! I'm Tommy. Or Thomas. Call me either, but don't call me Tom! I'm a web-developer who is migrating between San Fransisco and Seattle looking for opportunities. This is my little personal website, and as you can see it has quite some touching up to do. For info about my resume, click the 'resume' button. To check out a small list of my personal and group projects, scroll down or click on the projects button. If you're a real weirdo and want to actually know about <i> me </i> then e-mail me at tommyn (at) isomedia (dot) com. </p>
+                        <p style="margin-top: 100px; color: #FFFFFF; margin-left: 10px; font-family: Segoe UI; font-size: 1.5em;"> Hi! I'm Tommy. Or Thomas. Call me either, but don't call me Tom! I'm a web-developer who is migrating between San Fransisco and Seattle looking for opportunities. This is my little personal website, and as you can see it has quite some touching up to do. For info about my resume, click the 'resume' button. To check out a small list of my personal and group projects, scroll down or click on the projects button. More of my projects are listed under my github account, TND23. If you're a real weirdo and want to actually know about <i> me </i> then e-mail me at tommyn (at) isomedia (dot) com. </p>
                         <%= image_tag "web_pic1.jpg", :id => 'profile-pic' %>
 
                     </div>
@@ -95,16 +95,10 @@
         });
 
         $('#resume-button').click(function(){
-        var r=confirm("Download this document? (.doc format)");
-        if (r==true){
-            $('#resume-button').attr({target: '_blank', href: './resume.doc'});
-        }       
-        else{
-            var x = confirm("check out the plain text version online?");
-            if (x ==true){
-                 $('#resume-button').attr({target: '_blank', href: './resume-plain.txt'});
-            }
-        }
+            var r=confirm("View my resume online?");
+            if (r==true){
+                $('#resume-button').attr({target: '_blank', href: './resume'});
+            }       
         });
     </script>
 </html>
