@@ -63,5 +63,6 @@
 })(this);
 
 // TODO: add cool flames for acceleration
+// TODO: add gun so it is obvious where we're shooting from
 // TODO: reset position on losing a life COMPLETE
-// TODO: add invincibility when losing a life
+// TODO: add invincibility when losing a life COMPLETE

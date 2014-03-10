@@ -50,12 +50,17 @@
 
   Game.prototype.checkCollisions = function(){
     for(var i = 0; i < this.asteroids.length; i++){
-      if (this.ship.isCollidedWith(this.asteroids[i])) {
+      if (this.ship.invincible_timer != 0){
+        this.ship.invincible_timer -= 50;
+        return;
+      }
+      else if (this.ship.isCollidedWith(this.asteroids[i])) {
         this.lives -=1;
         if (this.lives < 0){
           this.displayGameOver();
         }
         else{
+          this.ship.invincible_timer = 1000;
           this.ship.pos[0] = (this.dimX/2);
           this.ship.pos[1] = (this.dimY/2);
           this.ship.angle = Math.PI/2; 
@@ -239,4 +244,3 @@
 })(this);
 
 // TODO: add sationary_object 
-// increment lives based on points

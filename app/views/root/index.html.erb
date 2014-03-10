@@ -3,31 +3,33 @@
         <title>
             Thomas' Webpage
         </title>
+
     </head>
-    <body>
+    <body style="background-color: rgb(56, 63, 116)">
     <div class="navbar navbar-inverse" role="navigation" style="width:100%">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand">dashboard</a>
+                <a class="navbar-brand">Thomas Nast</a>
             </div>
             <ul class="nav navbar-nav" >
                
                 <li><a id="projects-button" href="#">Projects</a></li>
                 <li><a id="resume-button" href="#">Resume</a></li>
                 <li><a id="about-me-button" href="#about">About Me</a></li>
+<!--                 <li><a id="musings-button" href="#thoughts">Musings</a></li>
+ -->
             </ul>
         </div>
     </div>
             <div class="logo" style="height: 100%;">
-            <h1 style="z-index: 2; position: relative;">
-                        Thomas Nast
-                        <small>web developer</small>
-                    </h1>
+         
                     <div style="height:100%; width:100%;">
 
                     <div id="about-me" class="push-center" style="height: 100%; width: 100%; background-color: rgba(146, 118, 168, .5); z-index: 1; position: absolute;  display: none; margin-top: 0px;">
                         <p style="margin-top: 100px; color: #FFFFFF; margin-left: 10px; font-family: Segoe UI; font-size: 1.5em;"> Hi! I'm Tommy. Or Thomas. Call me either, but don't call me Tom! I'm a web-developer who is migrating between San Fransisco and Seattle looking for opportunities. This is my little personal website, and as you can see it has quite some touching up to do. For info about my resume, click the 'resume' button. To check out a small list of my personal and group projects, scroll down or click on the projects button. More of my projects are listed under my github account, TND23. If you're a real weirdo and want to actually know about <i> me </i> then e-mail me at tommyn (at) isomedia (dot) com. </p>
+                       
                         <%= image_tag "web_pic1.jpg", :id => 'profile-pic' %>
+            
 
                     </div>
                 <%= image_tag "IMG_0219.JPG", :id => 'sunset-hill' %>
@@ -40,38 +42,70 @@
     width: 100%;
     background: black;
 ">
+
         </div>
-            <h2>Projects</h2>
+            <h2 style="color: white;">Projects</h2>
             <blockquote>
-                <p>La semplicità è la massima sofisticazione / 
+                <p style="color: white;">La semplicità è la massima sofisticazione / 
                 Simplicity is the ultimate sophistication </p>
                 <footer><cite>Leonardo Da Vinci</cite></footer>
             </blockquote>
-            <div class="row">
-                <a id="box1" class="col-md-4" href="http://www.aheadplan.com">
-                 <%= image_tag "trolleapp_img.png", {height: "400px", margin: 0} %>                      
+            <legend> </legend>
+                <p class="col-md-4" style="color: white; margin-left: 10px;"> A clone of Trello and my first major creation. This is a full stack implementation of the Trello website which allows for users to manage tasks by creating boards, then making lists on those boards, and then cards on those lists. It was developed with rails, javascript and backbone all sitting over a postgres database.</p>
+
+                <a id="box1" class="col-md-2" style="margin-bottom: 20px; margin-left: 10px;" href="http://www.aheadplan.com">
+                 <%= image_tag "trolleapp_img.png", {height: "250px", margin: 0} %>                      
                 </a>
 
-                 <a id="box2" class="col-md-4" a href="./asteroids/index.html">
-                 <%= image_tag "asteroids.png", {height: "400px", margin: 0} %>                      
-                </a>
+                  <p class="col-md-4" style="color: white; margin-left: 50px; margin-top: 10px;"> An example of how it might work: you create a "Work-stuff" board. Then you make a list, called "TO DOS" and then another called, "DONE". You can now add cards to the TODO list, and move said cards to and from said list. Try it for yourself</p>
+                
 
-                <div class="col-md-4">
-                    <a href="#"><img src="" alt=""> More coming soon..</a>                        
-                </div>
+                    <legend style="border-bottom: 2px solid white;"> </legend>
+
+
+                 <a id="box2" class="col-md-2" style="margin-left: 10px; margin-bottom: 20px;" a href="./asteroids/index.html">
+                 <%= image_tag "asteroids.png", {height: "250px", margin: 0} %>                      
+                </a>
+                <p class="col-md-4" style="color: white; margin-left: 50px; margin-top: 10px;"> An attempt at replicating the famous "Asteroids" arcade game. So smooth so sleek. I'm considering adding sound effects and some other tidbits when I get the time. Give it a try and message me with ideas! </p>
+
+                <div class="col-md-2">
             </div>
         </div>
-        <footer>
-            <div class="navbar navbar-inverse" role="navigation" style="width:100%">
-                <div class="container">
-                    <ul class="nav navbar-nav" >
-                        <li><a id="projects-button-2" href="#">Projects</a></li>
-                        <li><a id="resume-button" href="#">Resume</a></li>
-                        <li><a id="about-me-button" href="#about">About Me</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+                    <legend style="border-bottom: 2px solid #e5e5e5"> </legend>
+
+        <p style="line-height: 6;"> 
+                        <a href="https://github.com/TND23/">
+
+            <i class="fa fa-github col-md-3 col-sm-1" style="
+                                    text-shadow: 1px 1px 1px #ccc;
+                                    font-size: 8em;
+                                    color: rgb(59, 100, 171);
+                                    margin-left: 70px;
+                                    margin-top: 10px;"
+                                    > 
+            </i>
+            </a> 
+            <a href="http://linkedin.com/pub/thomas-nast/6a/747/349/">
+
+            <i class="fa fa-linkedin col-md-3 col-sm-1" style="
+                                    text-shadow: 1px 1px 1px #000;
+                                    font-size: 8em;
+                                    color: rgb(255, 255, 255);
+                                    margin-left: 70px;
+                                    margin-top: 10px;"
+                                    ></i>
+                                </a>
+<!-- 
+                                     <i class="fa fa-envelope col-md-3 col-sm-1" style="
+                                    text-shadow: 1px 1px 1px #000;
+                                    font-size: 8em;
+                                    color: rgb(255, 255, 255);
+                                    margin-left: 70px;
+                                    margin-top: 10px;"
+                                    ></i> -->
+
+        </p>
+       
     </body>
 
     <script>

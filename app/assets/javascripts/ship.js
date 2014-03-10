@@ -10,6 +10,7 @@
   var Ship = Ship.ship = function(pos, vel, rotation_vel) {
     var COLOR = "#2233AA";
     var RADIUS = 20;
+    this.invincible_timer = 0;
     this.ENGINE = 0.04;
     this.GUN_SPEED = 0.12;
     this.MAX_SPEED = .06;
