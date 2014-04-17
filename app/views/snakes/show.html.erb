@@ -1,0 +1,23 @@
+<html>
+	<body>
+
+		<button type="button" style="margin-top: 0px;" onclick="board.setMode('rainbow');">Rainbow mode!</button>
+		<button type="button" onclick="board.setMode('normal'); ">Normal mode!</button>
+		<button type="button" onclick="board.setMode('obn'); ">Obnoxious mode!</button>
+		<button type="button" onclick="board.setMode('obn2'); ">Obnoxious mode 2!</button>
+
+		<script>
+			var board = new Board.GameBoard();
+			var game = new SnakeGame.Game();
+			var body = document.getElementsByTagName("body")[0];
+			board.create(body);
+			game.start();
+		</script>
+	</body>
+
+	<p> Left: a or left on arrow pad </p>
+	<p> Up: w or up on arrow pad </p>
+	<p style="margin-left: 440px; "> Down: s or down on arrow pad </p>
+	<p style="margin-left: 440px; "> Right: d or right on arrow pad </p>
+	<p style="margin-left: 440px; margin-bottom: 0px;"> Pause: space bar </p>
+</html>

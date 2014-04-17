@@ -15,4 +15,6 @@
 //= require jquery-ui
 //= require bootstrap
 //= require bootstrap.min
+//= require_tree ./asteroids_js
+//= require_tree ./snakes_js
 //= require_tree .

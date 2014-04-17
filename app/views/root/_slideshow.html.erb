@@ -1,0 +1,63 @@
+<div id="slideshow-wrap">
+    <input type="radio" id="button-1" name="controls" checked="checked"/>
+    <input type="radio" id="button-2" name="controls"/>
+    <input type="radio" id="button-3" name="controls"/>
+    <input type="radio" id="button-4" name="controls"/>
+    <input type="radio" id="button-5" name="controls"/>
+    <label for="button-1" class="arrows" id="arrow-1">></label>
+    <label for="button-2" class="arrows" id="arrow-2">></label>
+    <label for="button-3" class="arrows" id="arrow-3">></label>
+    <label for="button-4" class="arrows" id="arrow-4">></label>
+    <label for="button-5" class="arrows" id="arrow-5">></label>
+    <div id="slideshow-inner">
+        <ul>
+            <li id="slide1">
+                <%= image_tag "trolle.bmp", :id => 'profile-pic' %>
+                <div class="description"> 
+                    <input type="checkbox" id="show-description-2"/>
+                    <label for="show-description-2" class="show-description-label">I</label>
+                    <div class="description-text">
+                        <h2><a href="http://www.aheadplan.com">Trolle</a></h2>
+                        <p>A clone of Trello and my first major creation. This is a full stack implementation of the Trello website. It was developed with rails, javascript and backbone all sitting over a postgres database.</p>
+                    </div>
+                </div>
+
+            </li>
+            <li id="slide2">              
+              <%= image_tag "asteroids.bmp", :id => 'asteroids' %>
+                <div class="description">
+                    <input type="checkbox" id="show-description-1"/>
+                    <label for="show-description-1" class="show-description-label">I</label>
+                    <div class="description-text">
+                        <h2><a href="./asteroids/index.html">Asteroids</a></h2>
+                        <p> An attempt at replicating the famous "Asteroids" arcade game. So smooth so sleek. I'm considering adding sound effects and some other tidbits when I get the time. Give it a try and message me with ideas!</p>
+                    </div>
+                </div>
+            </li>
+
+            <li id="slide3">
+                <%= image_tag "snake.bmp", :id => 'snake' %>
+                    <div class="description">
+                    <input type="checkbox" id="show-description-3"/>
+                    <label for="show-description-3" class="show-description-label">I</label>
+                    <div class="description-text">
+                        <h2><a href="./snakes/index.html">Snake</a></h2>
+                        <p>Snake, the game. I'll probably also get around to improving this at some point. Have fun!</p>
+                    </div>
+                </div>
+            </li>
+            <li id="slide4">
+                <%= image_tag "gem.bmp", :id => 'gem' %>
+                <div class="description">
+                    <input type="checkbox" id="show-description-4"/>
+                    <label for="show-description-4" class="show-description-label">I</label>
+                    <div class="description-text">
+                        <h2><a href="https://github.com/tnd23/alfalfa">Alfalfa</a></h2>
+                        <p>My first gem! It's a silly little thing that allows you to run Alfalfa.sort_gemfile to
+                            alphabetize your gemfiles. </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

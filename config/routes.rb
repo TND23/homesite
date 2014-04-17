@@ -3,4 +3,5 @@ Homeapp::Application.routes.draw do
   resources :root, :only => [:index]
   resources :resume, :only => [:index]
   resources :asteroids
+  resources :snakes
 end
