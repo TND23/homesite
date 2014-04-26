@@ -5,7 +5,7 @@ gem 'pg'
 gem "jquery-rails", "~> 3.1.0"
 gem 'turbolinks'
 gem 'bootstrap-sass'
-
+gem 'mail_form'
 group :assets do
 	gem 'sass-rails', '~> 4.0.0'
 	gem 'uglifier', '>= 1.3.0'

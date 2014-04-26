@@ -31,7 +31,8 @@
                     <ul class="nav navbar-nav" >
                         <li><a id="about-me-button" href="#about">About Me</a></li>
                         <li><a id="resume-button" href="#">Resume</a></li>
-                        <li><a id="contact-me-button" href="#contact">Contact</a></li> 
+                        <li><a id="contact-me-button" href="#contact">Contact</a></li>
+                        <li><p id="email-address">tommyn@isomedia.com</p></li> 
                     </ul>
                 </div>
             </div>
@@ -40,7 +41,8 @@
         <h2 id="projects-header" style="color: white;">Projects</h2>
 
         <%= render 'slideshow' %>
-        <footer>
+<!--         <%= render 'email' %>
+ -->        <footer>
         <legend style="border-bottom: 2px solid #e5e5e5"> </legend>
 
         <p style="line-height: 6;"> 
@@ -74,6 +76,11 @@
             if (r==true){
                 $('#resume-button').attr({target: '_blank', href: './resume'});
             }       
+        });
+
+        $('#contact-me-button').click(function(){
+            var my_email = $("#email-address");
+            my_email.toggle("visible");
         });
     </script>
 </html>

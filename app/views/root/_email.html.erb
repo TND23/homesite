@@ -1,0 +1,12 @@
+<h1>Shoot me a message!</h1>
+<div id="hidden-mail">
+<%= form_tag send_email_url, method: :post do %>
+  <%= label_tag "sender_info[name]", "Name" %><br/>
+  <%= text_field_tag "sender_info[name]" %><br />
+  <%= label_tag "sender_info[email]", "Email" %><br/>
+  <%= text_field_tag "sender_info[email]" %><br />
+  <%= label_tag "sender_info[message]", "Message" %><br/>
+  <%= text_area_tag "sender_info[message]", "", size: "60x10" %><br/>
+  <%= submit_tag "Submit" %>
+<% end %>
+</div>
