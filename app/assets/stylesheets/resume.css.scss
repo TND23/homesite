@@ -1,0 +1,70 @@
+$font-stack: Helvetica, sans-serif;
+/* credit to www.subtlepatterns.com for background  */
+/* thanks to css-tricks.com for ideas */
+body{
+	background: url('skulls.png');
+	height: 1000px;
+}
+dd{
+	margin-top: 10px;
+	width: 600px;
+	float: right;
+}
+
+dd.clear{
+	float: none;
+	margin: 0;
+	height: 15px;
+	clear: both;
+}
+
+dd#projects{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: right;
+	padding: 0 26px 0 0;
+	width: 150px;
+	float: left;
+	height: 310px;
+	border-right: 1px solid #999;
+}
+
+dt{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: right;
+	padding: 0 26px 0 0;
+	width: 150px;
+	float: left;
+	height: 60px;
+	border-right: 1px solid #999;
+}
+
+dt#activities{
+	height: 80px;
+}
+
+dt#projects{
+	height: 200px;
+}
+
+dt#software-skills{
+	height: 80px;
+}
+
+#resume-container{
+	font: 100% $font-stack;
+	background-color: white;
+	height: 900px;
+}
+
+#resume-wrap{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	height: 1000px;
+}
+

@@ -216,3 +216,29 @@ input[type=radio]#button-2:checked~.arrows#arrow-1, input[type=radio]#button-3:c
 }
 
 .description input[type=checkbox]:checked~.description-text { opacity: 1 }
+
+.icon-container{
+    height: 100px;
+    width: 100px;
+
+}
+
+#footer-right-column{
+    width: 25%;
+    top: 3px;
+    left: 70%;
+    margin: 0;
+    position: relative;
+}
+
+#footer-left-column{
+    width: 25%;
+    margin: 0;
+    clear: left;
+    position: relative;
+    top: 3px;
+}
+
+footer{
+    position: static;
+}
